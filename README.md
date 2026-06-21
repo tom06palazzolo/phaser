@@ -32,6 +32,15 @@ The game uses Phaser Arcade Physics. The player stands on platforms, jumps acros
 
 ## Run the project
 
-Open `Phaser_3_Projet/index.html` in a browser or serve the folder with a local web server.
+Do not open `Phaser_3_Projet/index.html` directly with `file://`. Phaser loads images through XHR, and browsers block those requests from local files.
+
+Run a local web server from the project folder instead:
+
+```bash
+cd /Users/tompalazzolo/git/phaser/Phaser_3_Projet
+python3 -m http.server 8000
+```
+
+Then open `http://localhost:8000/` in your browser.
 
 If you want, I can also rewrite the HTML and in-game labels so the project title, page text, and file naming are more consistent.
